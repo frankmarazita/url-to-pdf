@@ -21,4 +21,7 @@ if (!url) {
   process.exit(1);
 }
 
-printPDF(url).catch(console.error);
+printPDF(url).catch((error) => {
+  console.error(error);
+  process.exit(1);
+});
