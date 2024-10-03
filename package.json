@@ -1,0 +1,25 @@
+{
+  "name": "url-to-pdf",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "pkg . --out-path ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "puppeteer": "^23.5.0"
+  },
+  "devDependencies": {
+    "pkg": "^5.8.1"
+  },
+  "bin": "index.js",
+  "pkg": {
+    "targets": [
+      "node18-linux-x64"
+    ]
+  }
+}
