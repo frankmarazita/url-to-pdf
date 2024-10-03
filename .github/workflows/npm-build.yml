@@ -23,5 +23,5 @@ jobs:
       - name: Upload url-to-pdf binary
         uses: actions/upload-artifact@v4
         with:
-          name: url-to-pdf-binary
+          name: url-to-pdf
           path: ./url-to-pdf
