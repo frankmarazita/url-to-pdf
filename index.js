@@ -14,6 +14,11 @@ async function printPDF(url) {
   await browser.close();
 }
 
-const url = "https://example.com";
+const url = process.argv[2];
+
+if (!url) {
+  console.error("Please provide a URL as an argument");
+  process.exit(1);
+}
 
 printPDF(url).catch(console.error);
